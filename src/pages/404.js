@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { PageNotFound } from '../styles/404.styled';
 
 const NotFound = () => {
   return (
-    <div>404</div>
+    <PageNotFound>404</PageNotFound>
   )
 }
 
-export default 404
+export default NotFound
