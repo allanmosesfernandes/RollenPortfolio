@@ -41,6 +41,7 @@ export const NavLink = styled(Link)`
   font-family: ${(props) => props.theme.primaryFont};
   color: inherit;
   text-decoration: none;
+  border-bottom: none;
   letter-spacing: 1px;
 
   /* Media Queries for Tablets */

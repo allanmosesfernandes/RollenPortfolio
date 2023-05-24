@@ -28,6 +28,8 @@ body {
 
 a {
     text-decoration: none;
+    border-bottom: 3px solid ${(props) => props.theme.purpleShade};
+    color: inherit;
 }
 .wrapper {
     max-width: 1440px;
