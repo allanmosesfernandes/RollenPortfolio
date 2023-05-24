@@ -1,11 +1,16 @@
 import * as React from "react"
-import GlobalStyle from "../styles/globalStyles"
-import Layout from "../components/Layout"
+import { GlobalStyle, theme } from "../styles/globalStyles"
+import Layout from "../components/Layout";
+import { ThemeProvider } from "styled-components";
+
 export default function Home() {
   return <>
-  
+    <ThemeProvider theme={theme}>
     <GlobalStyle />
-    <Layout></Layout>
+      <Layout></Layout>
+
+    </ThemeProvider>
+
   </>
 }
 
