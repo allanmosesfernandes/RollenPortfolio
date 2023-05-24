@@ -1,4 +1,14 @@
 import styled from "styled-components";
+import back from "../assets/images/HOme/bg.svg";
+
+
+export const FirstFold = styled.div`
+/* background-image: url(${back});*/
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+
+`
 export const PageNotFound = styled.div`
 height: 100vh;
 display: flex;

@@ -9,6 +9,7 @@ export const Navbar = () => {
         <h2>Forty3 Designs.</h2>
       </Link>
       <NavLink to="/">(WORK)</NavLink>
+      
     </NavbarStyled>
   )
 }
