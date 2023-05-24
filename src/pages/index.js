@@ -1,7 +1,8 @@
-import * as React from "react"
+import * as React from "react";
+import { ThemeProvider } from "styled-components";
+
 import { GlobalStyle, theme } from "../styles/globalStyles"
 import Layout from "../components/Layout";
-import { ThemeProvider } from "styled-components";
 
 export default function Home() {
   return <>

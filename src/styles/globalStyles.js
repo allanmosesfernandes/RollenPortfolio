@@ -20,5 +20,3 @@ export const theme = {
    secondaryColor: "#0000ff",
    primaryFont: "'IBM Plex Mono', monospace",
 }
-
-export GlobalStyle;
