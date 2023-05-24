@@ -21,4 +21,5 @@ font-family: ${props => props.theme.primaryFont};
 color: inherit;
 text-decoration: none;
 letter-spacing: 1px;
+
 `
