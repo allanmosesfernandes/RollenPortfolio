@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 export const NavbarStyled = styled.nav`
   width: 100%;
   display: flex;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
 
