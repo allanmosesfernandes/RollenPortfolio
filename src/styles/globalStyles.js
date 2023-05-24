@@ -16,12 +16,17 @@ export const GlobalStyle = createGlobalStyle`
 body {
     font-family: ${props => props.theme.primaryFont};
     background-color: ${props => props.theme.primaryColor};
+    color: ${props => props.theme.secondaryColor};
+}
+
+a {
+    text-decoration: none;
 }
 `
 
 export const theme = {
-   primaryColor: "#000000",
-   secondaryColor: "#7127BA",
+   primaryColor: "#232428",
+   secondaryColor: "#E0E0E0",
    primaryFont: "'IBM Plex Mono', monospace",
    secondaryFont: "Visual"
 }
