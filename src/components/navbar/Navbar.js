@@ -6,10 +6,9 @@ export const Navbar = () => {
     <NavbarStyled>
       <NavLink to="about">(ABOUT)</NavLink>
       <Link to="/">
-        <h2>Forty3 Designs.</h2>
+        <h2>Forty3 Designs<span>.</span></h2>
       </Link>
       <NavLink to="/">(WORK)</NavLink>
-      
     </NavbarStyled>
   )
 }

@@ -13,6 +13,10 @@ export const NavbarStyled = styled.nav`
     margin: auto;
     border-bottom: 5px solid #551a8b;
     font-size: ${(props) => props.theme.fsLG};
+
+    span {
+      color: #551a8b;
+    }
   }
 
   /* Media Queries for Tablets */

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import back from "../assets/images/HOme/bg.svg";
 
-
 export const FirstFold = styled.div`
 /* background-image: url(${back});*/
 background-size: cover;
