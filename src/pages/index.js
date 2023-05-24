@@ -5,12 +5,11 @@ import { FirstFold } from "../styles/404.styled";
 
 
 export default function Home() {
-  return <FirstFold>
-  
-    <Layout>
-      <h2>THis is homepage</h2>
+  return<Layout>
+      <section>
+    
+      </section>
     </Layout>
-  </FirstFold>
 }
 
 // export const Head = () => <title>Home Page</title>
