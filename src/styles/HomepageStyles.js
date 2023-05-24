@@ -27,8 +27,9 @@ img {
 }
 
 .smallImg {
-width: 30px;
-height: 30px;
+width: 40px;
+height: 40px;
+margin: 0 10px;
 }
 p {
     font-family: ${(props) => props.theme.secondaryFont};

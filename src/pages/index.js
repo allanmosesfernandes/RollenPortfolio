@@ -13,10 +13,10 @@ export default function Home() {
           <h2>Hello there<span><img src={hello} /></span></h2>
           <p>
             I'm Rollen Fernandes, a Graphic Designer based out of Mumbai, India 
-            currently orchestrating pixel-perfect designs with finesse, and serving as a senior manager at  <a href="https://www.vanik.com/littleolive/home">Little Olive.</a>
+            currently orchestrating pixel-perfect designs with finesse, and serving as a senior manager at  <a className="squiggle" href="https://www.vanik.com/littleolive/home">Little Olive.</a>
             </p>
             <p>
-            <span><img src={Artist} alt="artist"/></span>As a graphic designer , I have a keen eye for detail and a strong understanding of design principles, which allows me to create visually stunning and effective designs. 
+            <span><img className="smallImg" src={Artist} alt="artist"/></span>As a graphic designer , I have a keen eye for detail and a strong understanding of design principles, which allows me to create visually stunning and effective designs. 
 
           </p>
           </div>
