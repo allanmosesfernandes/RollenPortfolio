@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap');
-
 import styled from "styled-components";
 export const PageNotFound = styled.div`
 height: 100vh;

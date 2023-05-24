@@ -1,7 +1,9 @@
 import * as React from "react"
-
+import GlobalStyle from "../styles/globalStyles"
 export default function Home() {
-  return <div>Hello gatsby!</div>
+  return <>
+    <GlobalStyle />
+  </>
 }
 
 // export const Head = () => <title>Home Page</title>
