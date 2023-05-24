@@ -14,19 +14,32 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    font-family: ${props => props.theme.primaryFont};
-    background-color: ${props => props.theme.primaryColor};
-    color: ${props => props.theme.secondaryColor};
+    font-family: ${(props) => props.theme.primaryFont};
+    background-color: ${(props) => props.theme.primaryColor};
+    color: ${(props) => props.theme.secondaryColor};
 }
 
 a {
     text-decoration: none;
 }
-`
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+`;
 
 export const theme = {
-   primaryColor: "#232428",
-   secondaryColor: "#E0E0E0",
-   primaryFont: "'IBM Plex Mono', monospace",
-   secondaryFont: "Visual"
+    primaryColor: "#232428",
+    secondaryColor: "#E0E0E0",
+    primaryFont: "'IBM Plex Mono', monospace",
+    secondaryFont: "Visual",
+    fsXL: "5rem",
+    fsLG: "4rem",
+    fsMedium: "3rem",
+    fsSmall: "2rem",
+    fsXsmall: "1rem",
+    
 }
