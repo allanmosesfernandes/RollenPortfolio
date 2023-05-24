@@ -1,8 +1,11 @@
 import * as React from "react"
 import GlobalStyle from "../styles/globalStyles"
+import Layout from "../components/Layout"
 export default function Home() {
   return <>
+  
     <GlobalStyle />
+    <Layout></Layout>
   </>
 }
 

@@ -1,8 +1,11 @@
-import React from 'react'
-
+import React from 'react';
+import "normalize.css";
+import { Navbar } from './navbar/Navbar';
 const Layout = () => {
   return (
-    <div>Layout</div>
+    <>
+        <Navbar />
+    </>
   )
 }
 
