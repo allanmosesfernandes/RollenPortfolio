@@ -27,6 +27,10 @@ export const HomePageStyled = styled.section `
   gap: 2rem;
   align-items: center;
   min-height: 80vh;
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    grid-template-columns: 1fr
+  }
   img {
     width: 50px;
     height: 50px;
@@ -69,4 +73,6 @@ export const VideoContainer = styled.div `
     aspect-ratio: 16 / 9;
     width: 100%;
   }
+
+  
 `;
