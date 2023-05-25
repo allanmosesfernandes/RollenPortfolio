@@ -12,7 +12,7 @@ export default function Home() {
           <div>
           <h2>Hello there<span><img src={hello} /></span></h2>
           <p>
-            I'm Rollen Fernandes, a Graphic Designer based out of Mumbai, India 
+            I'm Rollen Fernandes, a graphic Designer based out of Mumbai, India 
             currently orchestrating pixel-perfect designs with finesse, and serving as a senior manager at  <a className="squiggle" href="https://www.vanik.com/littleolive/home">Little Olive.</a>
             </p>
             <p>
