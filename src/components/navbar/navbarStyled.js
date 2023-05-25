@@ -8,7 +8,7 @@ export const NavbarStyled = styled.nav`
   align-items: center;
 
   h2 {
-    font-family: ${(props) => props.theme.secondaryFont};
+    font-family: ${(props) => props.theme.migraFont};
     color: ${(props) => props.theme.secondaryColor};
     margin: auto;
     border-bottom: 5px solid #551a8b;

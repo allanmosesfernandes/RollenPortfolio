@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import Visual from "../assets/fonts/VisueltPro-Regular.ttf"
 import PPReg from "../assets/fonts/PP Neue Machina - Free for Personal Use/PPRegular.otf"
+import Migra from "../assets/fonts/Migra - Free for Personal Use/Migra-Extralight.ttf";
+import Chill from "../assets/fonts/Chillax_Complete/Fonts/Chillax-Regular.otf";
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
@@ -13,6 +15,14 @@ export const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'Machina';
     src: url(${PPReg}) format('opentype');
+}
+@font-face {
+    font-family: 'Migra';
+    src: url(${Migra}) format('truetype');
+}
+@font-face {
+    font-family: 'Chill';
+    src: url(${Chill}) format('opentype');
 }
 *,
 *:before,
@@ -47,6 +57,7 @@ export const theme = {
     primaryFont: "'IBM Plex Mono', monospace",
     secondaryFont: "'Visual',monospace",
     machinaFont: "'Machina',monospace",
+    migraFont: "'Migra',monospace",
     fsXL: "5rem",
     fsLG: "4rem",
     fsMedium: "3rem",
