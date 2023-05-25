@@ -11,7 +11,7 @@ export const NavbarStyled = styled.nav`
     font-family: ${(props) => props.theme.migraFont};
     color: ${(props) => props.theme.secondaryColor};
     margin: auto;
-    border-bottom: 5px solid #551a8b;
+    // border-bottom: 5px solid ${(props) => props.theme.neonGreen};
     font-size: ${(props) => props.theme.fsLG};
 
     span {

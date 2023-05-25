@@ -17,7 +17,7 @@ h2 {
         width: 30px;
         height: 2px;
         margin-right: 10px;
-        background-color: ${(props) => props.theme.purpleShade};
+        background-color: ${(props) => props.theme.neonGreen};
     }
 }
 img {

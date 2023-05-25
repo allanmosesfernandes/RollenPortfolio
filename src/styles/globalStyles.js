@@ -34,13 +34,13 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     font-family: ${(props) => props.theme.secondaryFont};
-    background-color: ${(props) => props.theme.primaryColor};
+    background-color: #000;
     color: ${(props) => props.theme.secondaryColor};
 }
 
 a {
     text-decoration: none;
-    border-bottom: 3px solid ${(props) => props.theme.purpleShade};
+    border-bottom: 3px solid ${(props) => props.theme.neonGreen};
     color: inherit;
 }
 .wrapper {
@@ -56,6 +56,7 @@ export const theme = {
     primaryColor: "#232428",
     secondaryColor: "#E0E0E0",
     purpleShade: "#551a8b",
+    neonGreen: "#E8FF02",
     primaryFont: "'IBM Plex Mono', monospace",
     secondaryFont: "'Visual',monospace",
     machinaFont: "'Machina',monospace",
