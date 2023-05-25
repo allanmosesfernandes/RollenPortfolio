@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { PageNotFound, HeroImage } from '../styles/404.styled';
-import Pirate from "../assets/images/404/pirate.png"
+import Pirate from "../assets/images/404/pirate.png";
+
+
 const NotFound = () => {
   return (
     <PageNotFound>

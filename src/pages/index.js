@@ -1,5 +1,4 @@
 import * as React from "react";
-import Layout from "../components/Layout";
 import hello from "../assets/images/HOme/hand.png"
 import { HomePageStyled, HomepageH2 } from "../styles/HomepageStyles";
 import { GlobalStyle } from "../styles/globalStyles";
@@ -8,13 +7,15 @@ import WhatIdo from "../components/whatIdo/WhatIdo";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <GlobalStyle />
       <HomePageStyled className="wrapper">
         <div>
           <HomepageH2>
             Hello there
-            <span>
+             <div></div>
+            
+              <span>
               <img src={hello} />
             </span>
           </HomepageH2>
@@ -41,7 +42,7 @@ export default function Home() {
         <div></div>
       </HomePageStyled>
       <WhatIdo />
-    </Layout>
+    </>
   );
 }
 

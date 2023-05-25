@@ -4,6 +4,7 @@ import { Navbar } from './navbar/Navbar';
 import Footer from "./footer/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle, theme } from "../styles/globalStyles";
+
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
