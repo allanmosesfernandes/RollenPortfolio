@@ -15,3 +15,14 @@ export const WhatIdoCards = styled.div`
   flex-direction: column;
   background-color: #ffd02f;
 `;
+
+export const WhatIdoCardContainer = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+`
+export const WhatIdoCard = styled.div`
+  background: white;
+  border-radius: 30px;
+
+`
