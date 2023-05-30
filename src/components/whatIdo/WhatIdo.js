@@ -20,12 +20,12 @@ const WhatIdo = () => {
           <WhatIdoCard>
             <div className='card-left'>
               <h4>Catalogues</h4>
-              <p>dfkdf dkfjdkf dfkasdfjs askdfjaksdf askdfjksa fkasdfj</p>
+              <p>Eu amet minim cupidatat ex do ad fugiat officia.</p>
             </div>
-            <RightCard>
+            <div className='card-right'>
               <div className='card-right-bg'></div>
               <img src={image01} alt="card1" />
-            </RightCard>
+            </div>
           </WhatIdoCard>
         </WhatIdoCardContainer>
       </div>
