@@ -34,4 +34,13 @@ export const WhatIdoCard = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .card-right {
+    postion: relative;
+  }
+
+`
+
+export const RightCard = styled.div`
+    position: relative;
 `

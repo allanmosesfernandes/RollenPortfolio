@@ -1,6 +1,6 @@
 import React from 'react'
 import { GlobalStyle } from '../../styles/globalStyles';
-import { WhatIdoCard, WhatIdoCardContainer, WhatIdoStyledSection } from './whatdostyled';
+import { RightCard, WhatIdoCard, WhatIdoCardContainer, WhatIdoStyledSection } from './whatdostyled';
 import { StyledH2 } from "../../styles/HomepageStyles";
 import  image01  from "../../assets/images/whatIdo/WHAT01.webp";
 
@@ -22,13 +22,10 @@ const WhatIdo = () => {
               <h4>Catalogues</h4>
               <p>dfkdf dkfjdkf dfkasdfjs askdfjaksdf askdfjksa fkasdfj</p>
             </div>
-            <div className='card-right'>
+            <RightCard>
               <div className='card-right-bg'></div>
               <img src={image01} alt="card1" />
-              
-            </div>
-            
-            
+            </RightCard>
           </WhatIdoCard>
         </WhatIdoCardContainer>
       </div>
