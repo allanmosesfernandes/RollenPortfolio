@@ -26,7 +26,7 @@ export const HomePageStyled = styled.section `
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh;
   @media only screen and (max-width: 600px) {
     //code goes here
     grid-template-columns: 1fr
@@ -56,6 +56,14 @@ export const VideoContainer = styled.div `
   position: relative;
   overflow: hidden;
   width: 100%;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.7);
+  &:hover {
+    filter: grayscale(0);
+    transform: scale(1);
+
+  }
   background:
     linear-gradient(to right, #E8FF02 4px, transparent 4px) 0 0,
     linear-gradient(to right, #E8FF02 4px, transparent 4px) 0 100%,
