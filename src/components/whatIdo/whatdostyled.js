@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import images from "../../assets/images/whatIdo/WHAT01.webp"
 export const WhatIdoStyledSection = styled.section `
   background-color: #ffd02f;
@@ -9,7 +8,13 @@ export const WhatIdoStyledSection = styled.section `
   padding: 1rem;
 `;
 
+export const WhatIdoParagraph = styled.p`
+letter-spacing: 1px;
+line-height: 1.5;
+width: 50%;
+font-size: ${(props) => props.theme.fsSmall};
 
+`
 export const WhatIdoCards = styled.div `
   display: flex;
   flex-direction: column;
@@ -19,7 +24,8 @@ export const WhatIdoCards = styled.div `
 export const WhatIdoCardContainer = styled.div `
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-
+gap: 2rem;
+margin: 2rem 0;
 `
 export const WhatIdoCard = styled.div `
   background: white;
@@ -42,7 +48,14 @@ export const WhatIdoCard = styled.div `
     }
     .card-right {
       position: relative;
-      transition: transform 0.2s ease-in-out; /* Added transition property */
+      transition: transform 0.2s ease-in-out; 
+
+      a {
+        position: absolute;
+        right: -10px;
+        bottom: -20px;
+      }
+      /* Added transition property */
         .card-right-bg {
         position: absolute;
         left: auto;
@@ -53,9 +66,9 @@ export const WhatIdoCard = styled.div `
         height: 100%;
         border-radius: 0.69em;
         background-color: rgba(5, 0, 56, 0.06);
-        transition: all 0.5s ease-in-out; /* Added transition property */
-
-        }
+        transition: all 0.5s ease-in-out; 
+        /* Added transition property */
+      }
     }
     &:hover {
       .card-left {

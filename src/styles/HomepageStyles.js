@@ -5,6 +5,7 @@ export const StyledH2 = styled.h2 `
   font-size: ${(props) => props.theme.fsLG};
   letter-spacing: 1px;
   display: flex;
+  margin: 1rem 0;
 `;
 
 
