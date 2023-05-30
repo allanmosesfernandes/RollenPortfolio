@@ -14,6 +14,10 @@ line-height: 1.5;
 width: 50%;
 font-size: ${(props) => props.theme.fsSmall};
 
+@media only screen and (max-width: 800px) {
+  //code goes here
+  width: 100%;
+}
 `
 export const WhatIdoCards = styled.div `
   display: flex;
@@ -26,6 +30,10 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 gap: 2rem;
 margin: 2rem 0;
+@media only screen and (max-width: 800px) {
+  //code goes here
+  grid-template-columns: 1fr;
+}
 `
 export const WhatIdoCard = styled.div `
   background: white;

@@ -6,6 +6,12 @@ export const StyledH2 = styled.h2 `
   letter-spacing: 1px;
   display: flex;
   margin: 1rem 0;
+
+  @media only screen and (max-width: 800px) {
+    //code goes here
+    font-size: ${(props) => props.theme.fsMedium};
+
+  }
 `;
 
 
@@ -28,15 +34,20 @@ export const HomePageStyled = styled.section `
   gap: 2rem;
   align-items: center;
   min-height: 90vh;
-  @media only screen and (max-width: 600px) {
-    //code goes here
-    grid-template-columns: 1fr
-  }
-  img {
+    img {
     width: 50px;
     height: 50px;
     margin-left: 10px;
   }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    grid-template-columns: 1fr;
+    img {
+    width: 30px;
+    height: 30px;
+  }
+  }
+
 
   .smallImg {
     width: 40px;
@@ -63,7 +74,12 @@ export const VideoContainer = styled.div `
   &:hover {
     filter: grayscale(0);
     transform: scale(1);
+  }
 
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    transform: scale(1);
+    margin: auto auto 4rem auto;
   }
   background:
     linear-gradient(to right, #E8FF02 4px, transparent 4px) 0 0,

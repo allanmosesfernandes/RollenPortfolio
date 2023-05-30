@@ -27,7 +27,7 @@ const WhatIdo = () => {
             <div className='card-right'>
               <div className='card-right-bg'></div>
               <img src={image01} alt="card1" />
-              <Link to="https://www.behance.net/rollenfernandes1">
+              <Link to="https://www.behance.net/rollenfernandes1" target="_blank">
                 <img src={Arrow} alt="Link arrow" />
               </Link>
             </div>
