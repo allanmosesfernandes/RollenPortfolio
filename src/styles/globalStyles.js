@@ -3,14 +3,19 @@ import Visual from "../assets/fonts/VisueltPro-Regular.ttf"
 import PPReg from "../assets/fonts/PP Neue Machina - Free for Personal Use/PPRegular.otf"
 import Migra from "../assets/fonts/Migra - Free for Personal Use/Migra-Extralight.ttf";
 import Chill from "../assets/fonts/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf";
-import alc from "../assets/images/HOme/shattered-island.gif";
-
+import Nympha from "../assets/fonts/nympha/NymphaTrial-Light.ttf"
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 @font-face {
     font-family: 'Visual';
     src: url(${Visual}) format('truetype');
+     /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+    font-family: 'Nympha';
+    src: url(${Nympha}) format('truetype');
      /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -73,6 +78,7 @@ export const theme = {
     machinaFont: "'Machina',monospace",
     migraFont: "'Migra',monospace",
     ChillFont: "'Chill',monospace",
+    nymphaFont: "'Nympha',monospace",
     fsXL: "5rem",
     fsLG: "4rem",
     fsMedium: "3rem",
