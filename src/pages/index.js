@@ -5,11 +5,12 @@ import { GlobalStyle } from "../styles/globalStyles";
 import Artist from "../assets/images/HOme/artist.png";
 import WhatIdo from "../components/whatIdo/WhatIdo";
 import YoutubeVideo from "../components/youtubeVideo";
-
+import Gradient from "../components/Gradient";
 export default function Home() {
   return (
     <>
       <GlobalStyle />
+      <Gradient />
       <HomePageStyled className="wrapper">
         <div>
           <HomepageH2>
