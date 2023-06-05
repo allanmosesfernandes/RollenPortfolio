@@ -3,6 +3,7 @@ import Visual from "../assets/fonts/VisueltPro-Regular.ttf"
 import PPReg from "../assets/fonts/PP Neue Machina - Free for Personal Use/PPRegular.otf"
 import Migra from "../assets/fonts/Migra - Free for Personal Use/Migra-Extralight.ttf";
 import Chill from "../assets/fonts/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf";
+import alc from "../assets/images/HOme/shattered-island.gif";
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -35,8 +36,18 @@ export const GlobalStyle = createGlobalStyle`
 body {
     font-family: ${(props) => props.theme.secondaryFont};
     background-color: #000;
+    background-size: cover;
     color: ${(props) => props.theme.secondaryColor};
 }
+
+  .gatsby-image-wrapper img[src*=base64\\,] {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+  }
+
+ img {
+    max-width: 100%;
+  }
 
 a {
     text-decoration: none;
