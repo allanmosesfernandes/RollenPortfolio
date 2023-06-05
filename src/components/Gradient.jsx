@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
-import Star from "../assets/images/Gradient/Star.svg";
-import Globe from "../assets/images/Gradient/Globe.svg";
+import Star from "../assets/images/Gradient/10.png";
+import Globe from "../assets/images/Gradient/11.png";
 
 const GradientStyledDiv = styled.div`
 background-image: linear-gradient(to right, #434343 0%, black 100%);
