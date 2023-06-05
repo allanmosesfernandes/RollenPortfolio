@@ -4,6 +4,7 @@ import { HomePageStyled, HomepageH2, VideoContainer } from "../styles/HomepageSt
 import { GlobalStyle } from "../styles/globalStyles";
 import Artist from "../assets/images/HOme/artist.png";
 import WhatIdo from "../components/whatIdo/WhatIdo";
+import YoutubeVideo from "../components/youtubeVideo";
 
 export default function Home() {
   return (
@@ -37,7 +38,10 @@ export default function Home() {
           </p>
         </div>
         <VideoContainer>
-         <iframe className="youtube-video" src="https://www.youtube.com/embed/1CRjyUHXUek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <YoutubeVideo 
+            src={`https://www.youtube.com/embed/1CRjyUHXUek`}
+            title={'Homepage Video'} />
+
         </VideoContainer>
       </HomePageStyled>
       <WhatIdo />
