@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'LP Horizont Caps';
+    src: url('LPHorizontCaps.eot');
+    src: local('LP Horizont Caps'), local('LPHorizontCaps'),
+        url('LPHorizontCaps.eot?#iefix') format('embedded-opentype'),
+        url('LPHorizontCaps.woff2') format('woff2'),
+        url('LPHorizontCaps.woff') format('woff'),
+        url('LPHorizontCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

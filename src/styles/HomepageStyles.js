@@ -70,10 +70,8 @@ export const VideoContainer = styled.div `
   width: 100%;
   filter: grayscale(1);
   transition: all 0.3s ease-in-out;
-  transform: scale(0.7);
   &:hover {
     filter: grayscale(0);
-    transform: scale(1);
   }
 
   @media only screen and (max-width: 600px) {

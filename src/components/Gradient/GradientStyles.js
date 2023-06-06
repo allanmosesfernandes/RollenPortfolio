@@ -84,11 +84,59 @@ export const GradientStyledDiv = styled.div`
       border: none;
       border-top: 1px solid white;
       border-bottom: 1px solid white;
-      height: 90%;
+      height: 85vh;
     }
 
     .rotating-globe {
-        width: 50px;
+      width: 50px;
     }
   }
 `;
+
+export const GradientButton = styled.button`
+  font-family: ${(props) => props.theme.machinaFont};
+  font-size: ${(props) => props.theme.fsSmall};
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  right: 90px;
+  margin-left: auto;
+  top: -30px;
+  width: 200px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 1px solid white;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  .label-up {
+    display: block;
+    margin: 0px 30px;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    transition: 0.3s;
+  }
+
+  &:hover .label-up {
+    top: -100%;
+    background-color: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 0%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+  }
+`;
+         

@@ -3,7 +3,9 @@ import Visual from "../assets/fonts/VisueltPro-Regular.ttf"
 import PPReg from "../assets/fonts/PP Neue Machina - Free for Personal Use/PPRegular.otf"
 import Migra from "../assets/fonts/Migra - Free for Personal Use/Migra-Extralight.ttf";
 import Chill from "../assets/fonts/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf";
-import Nympha from "../assets/fonts/nympha/NymphaTrial-Light.ttf"
+import Nympha from "../assets/fonts/nympha/NymphaTrial-Light.ttf";
+import LP from "../assets/fonts/LP/LP.ttf";
+
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
@@ -13,6 +15,20 @@ export const GlobalStyle = createGlobalStyle`
      /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
+@font-face {
+    font-family: 'Nympha';
+    src: url(${Nympha}) format('truetype');
+     /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'LP';
+    src: url(${LP}) format('truetype');
+     /* other formats include: 'woff2', 'truetype, 'opentype',
+'embedded-opentype', and 'svg' */
+}
+
 @font-face {
     font-family: 'Nympha';
     src: url(${Nympha}) format('truetype');
@@ -79,6 +95,7 @@ export const theme = {
     migraFont: "'Migra',monospace",
     ChillFont: "'Chill',monospace",
     nymphaFont: "'Nympha',monospace",
+    lpFont: "'Lp',monospace",
     fsXXL: "8rem",
     fsXL: "5rem",
     fsLG: "4rem",
