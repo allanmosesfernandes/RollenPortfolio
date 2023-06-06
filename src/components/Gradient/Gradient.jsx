@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "styled-components"
 import Star from "../../assets/images/Gradient/10.png";
 import Globe from "../../assets/images/Gradient/meshy.png";
-import eclipse from "../../assets/images/Gradient/a1.svg";
 import { GradientStyledDiv } from './GradientStyles';
 
 

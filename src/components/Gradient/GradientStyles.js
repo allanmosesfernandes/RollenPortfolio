@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import eclipse from "../../assets/images/Gradient/a1.svg";
 
 export const GradientStyledDiv = styled.div`
   background-image: linear-gradient(to bottom, black 0%, #434343 100%);
@@ -59,13 +60,35 @@ export const GradientStyledDiv = styled.div`
     justify-content: center;
     background-size: contain;
     height: 500px;
+  }
+  @media screen and (max-width: 1200px) {
+    h2 {
+      font-size: ${(props) => props.theme.fsXL};
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .eclipseDiv {
+      height: 300px;
+    }
+    h2 {
+      font-size: ${(props) => props.theme.fsMedium};
+      text-align: center;
+      .star {
+        width: 30px;
+        height: 30px;
+      }
+    }
 
-    &:after {
-      content: "",
-      width: 100px;
-      position: absolute;
-      height: 100%;
-      background: white;
+    .border-div {
+      width: 100%;
+      border: none;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      height: 90%;
+    }
+
+    .rotating-globe {
+        width: 50px;
     }
   }
 `;

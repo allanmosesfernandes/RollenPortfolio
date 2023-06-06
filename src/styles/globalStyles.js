@@ -79,6 +79,7 @@ export const theme = {
     migraFont: "'Migra',monospace",
     ChillFont: "'Chill',monospace",
     nymphaFont: "'Nympha',monospace",
+    fsXXL: "8rem",
     fsXL: "5rem",
     fsLG: "4rem",
     fsMedium: "3rem",
