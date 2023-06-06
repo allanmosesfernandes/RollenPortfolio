@@ -1,11 +1,14 @@
 import * as React from "react";
 import hello from "../assets/images/HOme/hand.png"
-import { HomePageStyled, HomepageH2, VideoContainer } from "../styles/HomepageStyles";
+import { HomePageStyled, HomepageH2, VideoContainer, TypewriterDiv } from "../styles/HomepageStyles";
 import { GlobalStyle } from "../styles/globalStyles";
 import Artist from "../assets/images/HOme/artist.png";
 import WhatIdo from "../components/whatIdo/WhatIdo";
 import YoutubeVideo from "../components/youtubeVideo";
 import Gradient from "../components/Gradient/Gradient";
+import WhiteArr from "../assets/images/HOme/arrowBlock.svg";
+import Typewriter from 'typewriter-effect';
+
 export default function Home() {
   return (
     <>
@@ -22,28 +25,28 @@ export default function Home() {
             </span>
           </HomepageH2>
           <p>
-            I'm Rollen Fernandes, a graphic Designer based out of Mumbai, India
-            currently orchestrating pixel-perfect designs with finesse, and
-            serving as a senior manager at{" "}
-            <a className="squiggle" href="https://www.vanik.com/littleolive/home">
-              Little Olive.
-            </a>
+            I'm Rollen.
           </p>
-          <p>
-            <span>
+          
+          <img src={WhiteArr} alt="white arrow" className="arrow"/>
+          <TypewriterDiv>
+            a 
+            <Typewriter
+              options={{
+                strings: [' Graphic Designer', ' Footballer', ' Afro Beat Specialist', ''],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            {/* <span>
               <img className="smallImg" src={Artist} alt="artist" />
             </span>
             As a graphic designer , I have a keen eye for detail and a strong
             understanding of design principles, which allows me to create
-            visually stunning and effective designs.
-          </p>
+            visually stunning and effective designs. */}
+          </TypewriterDiv>
         </div>
-        <VideoContainer>
-          <YoutubeVideo 
-            src={`https://www.youtube.com/embed/1CRjyUHXUek`}
-            title={'Homepage Video'} />
 
-        </VideoContainer>
       </HomePageStyled>
       <WhatIdo />
     </>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bottom from "../assets/images/HOme/bottom.png";
 
 export const StyledH2 = styled.h2 `
   font-family: ${(props) => props.theme.secondaryFont};
@@ -26,11 +27,13 @@ export const HomepageH2 = styled(StyledH2)
       background-color: ${(props) => props.theme.neonGreen};
     }
   }
+
+  
 `;
 
 export const HomePageStyled = styled.section `
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
   min-height: 90vh;
@@ -38,6 +41,9 @@ export const HomePageStyled = styled.section `
     width: 50px;
     height: 50px;
     margin-left: 10px;
+  }
+  .arrow {
+    
   }
   @media only screen and (max-width: 600px) {
     //code goes here
@@ -100,3 +106,11 @@ export const VideoContainer = styled.div `
 
   
 `;
+
+export const TypewriterDiv = styled.div`
+display: flex;
+margin: 1rem 0;
+.Typewriter {
+  margin-left: 10px;
+}
+`
