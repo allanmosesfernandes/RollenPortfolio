@@ -30,6 +30,33 @@ export const HomepageH2 = styled(StyledH2)
   
 `;
 
+export const HelloDiv = styled.section`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+  p {
+    font-family: ${(props) => props.theme.ChillFont};
+    font-size: ${(props) => props.theme.fsXL};
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+  }
+
+`
+export const TypewriterDiv = styled.div`
+display: flex;
+margin: 4rem 0;
+    font-family: ${(props) => props.theme.nymphaFont};
+    font-size: ${(props) => props.theme.fsLG};
+.Typewriter {
+  margin-left: 10px;
+}
+  .Typewriter__wrapper {
+
+  }
+`
 export const HomePageStyled = styled.section `
   display: grid;
   grid-template-columns: 1fr;
@@ -40,10 +67,16 @@ export const HomePageStyled = styled.section `
     transform: rotate(270deg);
     transform-origin: bottom;
     left: 20px;
-
+  }
+  .namaste {
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: right;
+    right: 20px; 
   }
   .arrow {
-    
+    width: 70px;
+    transform: rotate(45deg);
   }
   @media only screen and (max-width: 600px) {
     //code goes here
@@ -59,12 +92,6 @@ export const HomePageStyled = styled.section `
     width: 40px;
     height: 40px;
     margin: 0 10px;
-  }
-  p {
-    font-family: ${(props) => props.theme.secondaryFont};
-    font-size: ${(props) => props.theme.fsSmall};
-    line-height: 1.5;
-    letter-spacing: 1px;
   }
 `;
 
@@ -107,10 +134,3 @@ export const VideoContainer = styled.div `
   
 `;
 
-export const TypewriterDiv = styled.div`
-display: flex;
-margin: 1rem 0;
-.Typewriter {
-  margin-left: 10px;
-}
-`
