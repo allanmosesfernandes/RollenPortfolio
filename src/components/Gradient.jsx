@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from "styled-components"
 import Star from "../assets/images/Gradient/10.png";
-import Globe from "../assets/images/Gradient/11.png";
+import Globe from "../assets/images/Gradient/black.png";
 import eclipse from "../assets/images/Gradient/a1.svg";
 
 const GradientStyledDiv = styled.div`
-  background-image: linear-gradient(to right, black 0%, #434343 100%);
+  background-image: linear-gradient(to bottom, black 0%, #434343 100%);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -13,19 +13,22 @@ const GradientStyledDiv = styled.div`
   align-items: center;
   justify-content: center;
   font-family: ${(props) => props.theme.nymphaFont};
-  perspective: 1000px;
-  .rotating-image {
-    width: 100px;
-    height: 100px;
-    transform-style: preserve-3d; /* Ensures the child elements maintain their 3D position */
-    animation: rotate 5s infinite linear; /* Animation for continuous rotation */
+  .rotating-globe {
+    animation: rotate 50s infinite linear; /* Animation for continuous rotation */
+    position: absolute;
+    top: 10%;
+    right: 400px;
+    width: 120px;
+    
+    border-radius: 50%;
+    background: transparent;
   }
   @keyframes rotate {
     from {
-      transform: rotateY(0deg); /* Initial rotation angle */
+      transform: rotate(0deg); /* Initial rotation angle */
     }
     to {
-      transform: rotateY(360deg); /* Final rotation angle */
+      transform: rotate(360deg); /* Final rotation angle */
     }
   }
   h2 {
@@ -42,20 +45,25 @@ const GradientStyledDiv = styled.div`
     }
   }
   .eclipseDiv {
+    position: relative;
     background-image: url(${eclipse});
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
+    max-width: 1300px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
   }
 `;
 const Gradient = () => {
   return (
     <GradientStyledDiv>
       <div className="eclipseDiv">
+        <img src={Globe} alt="Rotating Globe" className="rotating-globe" />
         <h2>
           <span>
             <img src={Star} alt="Star" className="star" />
