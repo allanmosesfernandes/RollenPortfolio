@@ -78,6 +78,7 @@ export const VideoContainer = styled.div `
     //code goes here
     transform: scale(1);
     margin: auto auto 4rem auto;
+    padding: 1rem;
   }
   background:
     linear-gradient(to right, #E8FF02 4px, transparent 4px) 0 0,

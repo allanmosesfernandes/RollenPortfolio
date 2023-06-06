@@ -41,7 +41,6 @@ export const GradientStyledDiv = styled.div`
     }
   }
   .border-div {
-
     width: 90%;
     display: flex;
     align-items: center;
@@ -81,8 +80,6 @@ export const GradientStyledDiv = styled.div`
     .border-div {
       width: 100%;
       border: none;
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
       height: 85vh;
     }
 
@@ -103,7 +100,7 @@ export const GradientButton = styled.button`
   width: fit-content;
   border-radius: 50px;
   font-weight: bold;
-  border: 1px solid white;
+  border: 2px solid white;
   display: inline-block;
   height: 40px;
   line-height: 40px;
@@ -133,8 +130,12 @@ export const GradientButton = styled.button`
     height: 30px;
     line-height: 30px;
     font-size: 1rem;
-    margin-bottom: 1rem;
     text-transform: lowercase;
+    .label-up {
+    display: block;
+    margin: 0px 15px;
+    font-weight: normal;
+    }
   }
 `;
          

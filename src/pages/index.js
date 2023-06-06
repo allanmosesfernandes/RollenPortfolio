@@ -14,7 +14,7 @@ export default function Home() {
       <HomePageStyled className="wrapper">
         <div>
           <HomepageH2>
-            Hello there
+            Hello 
              <div></div>
             
               <span>
