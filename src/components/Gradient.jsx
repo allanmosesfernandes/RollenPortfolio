@@ -16,12 +16,11 @@ const GradientStyledDiv = styled.div`
   .rotating-globe {
     animation: rotate 50s infinite linear; /* Animation for continuous rotation */
     position: absolute;
-    top: 10%;
-    right: 400px;
-    width: 120px;
-    
+    top: 0;
+    right: 20%;
+    width: 100px;
     border-radius: 50%;
-    background: transparent;
+    background: rgb(224, 224, 224);
   }
   @keyframes rotate {
     from {
@@ -49,14 +48,12 @@ const GradientStyledDiv = styled.div`
     background-image: url(${eclipse});
     background-repeat: no-repeat;
     background-position: center;
-    height: 80%;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     justify-content: center;
-    max-width: 1300px;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+    background-size: contain;
+    min-height: 500px;
   }
 `;
 const Gradient = () => {
