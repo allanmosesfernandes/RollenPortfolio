@@ -1,10 +1,6 @@
-import React from 'react'
-import styled from "styled-components"
-import Star from "../assets/images/Gradient/10.png";
-import Globe from "../assets/images/Gradient/black.png";
-import eclipse from "../assets/images/Gradient/a1.svg";
+import styled from "styled-components";
 
-const GradientStyledDiv = styled.div`
+export const GradientStyledDiv = styled.div`
   background-image: linear-gradient(to bottom, black 0%, #434343 100%);
   width: 100%;
   height: 100vh;
@@ -14,13 +10,13 @@ const GradientStyledDiv = styled.div`
   justify-content: center;
   font-family: ${(props) => props.theme.nymphaFont};
   .rotating-globe {
-    animation: rotate 50s infinite linear; /* Animation for continuous rotation */
+    animation: rotate 30s infinite linear; /* Animation for continuous rotation */
     position: absolute;
     top: 0;
     right: 20%;
     width: 100px;
     border-radius: 50%;
-    background: rgb(224, 224, 224);
+    background: transparent;
   }
   @keyframes rotate {
     from {
@@ -43,6 +39,15 @@ const GradientStyledDiv = styled.div`
       margin: 0 1rem;
     }
   }
+  .border-div {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
   .eclipseDiv {
     position: relative;
     background-image: url(${eclipse});
@@ -53,26 +58,14 @@ const GradientStyledDiv = styled.div`
     width: fit-content;
     justify-content: center;
     background-size: contain;
-    min-height: 500px;
+    height: 500px;
+
+    &:after {
+      content: "",
+      width: 100px;
+      position: absolute;
+      height: 100%;
+      background: white;
+    }
   }
 `;
-const Gradient = () => {
-  return (
-    <GradientStyledDiv>
-      <div className="eclipseDiv">
-        <img src={Globe} alt="Rotating Globe" className="rotating-globe" />
-        <h2>
-          <span>
-            <img src={Star} alt="Star" className="star" />
-          </span>{" "}
-          43 Designs{" "}
-          <span>
-            <img src={Star} alt="Globe" className="star" />
-          </span>
-        </h2>
-      </div>
-    </GradientStyledDiv>
-  );
-}
-
-export default Gradient
