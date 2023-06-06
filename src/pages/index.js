@@ -1,5 +1,6 @@
 import * as React from "react";
 import hello from "../assets/images/HOme/hand.png"
+import helloo from "../assets/images/HOme/helloo.png"
 import { HomePageStyled, HomepageH2, VideoContainer, TypewriterDiv } from "../styles/HomepageStyles";
 import { GlobalStyle } from "../styles/globalStyles";
 import Artist from "../assets/images/HOme/artist.png";
@@ -16,14 +17,16 @@ export default function Home() {
       <Gradient />
       <HomePageStyled className="wrapper">
         <div>
-          <HomepageH2>
-            Hello 
+        <img src={helloo} alt="hello" className="hello"/> 
+
+          {/* <HomepageH2>
+            <img src={helloo} alt="hello" /> 
              <div></div>
             
               <span>
               <img src={hello} />
             </span>
-          </HomepageH2>
+          </HomepageH2> */}
           <p>
             I'm Rollen.
           </p>

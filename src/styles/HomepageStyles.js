@@ -11,7 +11,6 @@ export const StyledH2 = styled.h2 `
   @media only screen and (max-width: 800px) {
     //code goes here
     font-size: ${(props) => props.theme.fsMedium};
-
   }
 `;
 
@@ -34,13 +33,14 @@ export const HomepageH2 = styled(StyledH2)
 export const HomePageStyled = styled.section `
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
-  align-items: center;
+  position: relative;
   min-height: 90vh;
-    img {
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
+  .hello {
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: bottom;
+    left: 20px;
+
   }
   .arrow {
     
