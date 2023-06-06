@@ -9,10 +9,6 @@ import { GradientButton } from './GradientStyles';
 const Gradient = () => {
   return (
     <GradientStyledDiv>
-      <GradientButton role="button">
-        <span class="label-up">ABOUT</span>
-        <span class="label-up">ABOUT</span>
-      </GradientButton>
 
       <div className="border-div">
         <div className="eclipseDiv">

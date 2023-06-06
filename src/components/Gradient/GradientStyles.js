@@ -41,13 +41,12 @@ export const GradientStyledDiv = styled.div`
     }
   }
   .border-div {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 100%;
   }
   .eclipseDiv {
     position: relative;
@@ -100,16 +99,14 @@ export const GradientButton = styled.button`
   border: none;
   outline: none;
   color: white;
-  right: 90px;
   margin-left: auto;
-  top: -30px;
-  width: 200px;
+  width: fit-content;
   border-radius: 50px;
   font-weight: bold;
   border: 1px solid white;
   display: inline-block;
-  height: 60px;
-  line-height: 60px;
+  height: 40px;
+  line-height: 40px;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -123,6 +120,7 @@ export const GradientButton = styled.button`
     position: relative;
     top: 0%;
     transition: 0.3s;
+    font-size: 1rem;
   }
 
   &:hover .label-up {

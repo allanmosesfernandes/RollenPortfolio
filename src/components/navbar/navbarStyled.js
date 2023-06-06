@@ -6,7 +6,13 @@ export const NavbarStyled = styled.nav`
   padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 1rem 0;
 
+  button {
+    margin-left: auto;
+  }
   h2 {
     font-family: ${(props) => props.theme.migraFont};
     color: ${(props) => props.theme.secondaryColor};
