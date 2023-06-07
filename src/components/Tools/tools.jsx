@@ -6,7 +6,9 @@ import illustrator from "../../assets/images/tools/illustrator.png";
 import lightroom from "../../assets/images/tools/lightroom.png";
 import aftereffects from "../../assets/images/tools/aftereffects.png";
 import affinity from "../../assets/images/tools/affinity.png";
-import capcut from "../../assets/images/tools/capcut.png";
+import amazon from "../../assets/images/tools/amazon.png";
+import meta from "../../assets/images/tools/meta.png";
+import flipkart from "../../assets/images/tools/download.png";
 
 const Tools = () => {
   return (
@@ -42,14 +44,29 @@ const Tools = () => {
             <p>Afinity Photo</p>
         </div>
         <div className="iconText">
-            <img src={capcut} alt='photoshop' />
-            <p>Capcut</p>
+            <img src={amazon} alt='photoshop' />
+            <p>Amazon Seller Central</p>
+        </div>
+        <div className="iconText">
+            <img src={meta} alt='photoshop' />
+            <p>Meta Seller Hub</p>
+        </div>
+        <div className="iconText">
+            <img src={photoshop} alt='photoshop' />
+            <p>Photoshop</p>
+        </div>
+        <div className="iconText">
+            <img src={premierpro} alt='photoshop' />
+            <p>Premier Pro</p>
+        </div>
+        <div className="iconText">
+            <img src={lightroom} alt='photoshop' />
+            <p>Lightroom</p>
         </div>
         <div className="iconText">
             <img src={illustrator} alt='photoshop' />
             <p>Illustrator</p>
         </div>
-
         </ToolsImages>
         </div>
 
