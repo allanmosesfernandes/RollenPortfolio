@@ -4,6 +4,8 @@ import PPReg from "../assets/fonts/PP Neue Machina - Free for Personal Use/PPReg
 import Migra from "../assets/fonts/Migra - Free for Personal Use/Migra-Extralight.ttf";
 import Chill from "../assets/fonts/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf";
 import Nympha from "../assets/fonts/nympha/NymphaTrial-Light.ttf";
+import Monchu from "../assets/fonts/nympha/Monchu.ttf";
+import MikelaRegular from "../assets/fonts/nympha/MikelaRegular.ttf";
 import LP from "../assets/fonts/LP/LP.ttf";
 
 
@@ -18,6 +20,18 @@ export const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'Nympha';
     src: url(${Nympha}) format('truetype');
+     /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+    font-family: 'MikelaRegular';
+    src: url(${MikelaRegular}) format('truetype');
+     /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+    font-family: 'Monchu';
+    src: url(${Monchu}) format('truetype');
      /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }

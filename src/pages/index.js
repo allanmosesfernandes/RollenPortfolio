@@ -20,7 +20,7 @@ export default function Home() {
         <HelloDiv>
         <img src={namaste} alt="hello" className="hello"/> 
           <p className="rolley">
-            I'm Rollen.
+            I'm Rollen
           </p>
           
           <img src={WhiteArr} alt="white arrow" className="arrow"/>

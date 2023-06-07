@@ -59,6 +59,7 @@ font-size: ${(props) => props.theme.fs2};
 .Typewriter {
   margin-left: 10px;
 }
+
 @media only screen and (max-width: 600px) {
 font-size: ${(props) => props.theme.fsSmall};
 }
