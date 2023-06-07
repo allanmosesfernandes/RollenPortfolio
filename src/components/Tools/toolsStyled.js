@@ -31,6 +31,7 @@ export const ToolsImages = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 width: 75%;
+gap: 2rem 0;
 .iconText {
 img {
     width: 50px;

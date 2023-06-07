@@ -1,9 +1,12 @@
 import React from 'react'
 import { ToolsContainer, ToolsContainerBodyCopy, ToolsImages } from './toolsStyled'
 import photoshop from "../../assets/images/tools/photoshop.png";
-import photoshop from "../../assets/images/tools/photoshop.png";
-
-
+import premierpro from "../../assets/images/tools/premierpro.png";
+import illustrator from "../../assets/images/tools/illustrator.png";
+import lightroom from "../../assets/images/tools/lightroom.png";
+import aftereffects from "../../assets/images/tools/aftereffects.png";
+import affinity from "../../assets/images/tools/affinity.png";
+import capcut from "../../assets/images/tools/capcut.png";
 
 const Tools = () => {
   return (
@@ -16,19 +19,35 @@ const Tools = () => {
         <ToolsImages>
         <div className="iconText">
             <img src={photoshop} alt='photoshop' />
-            <p>Adobe Photoshop</p>
+            <p>Photoshop</p>
         </div>
         <div className="iconText">
-            <img src={photoshop} alt='photoshop' />
-            <p>Adobe Photoshop</p>
+            <img src={premierpro} alt='photoshop' />
+            <p>Premier Pro</p>
         </div>
         <div className="iconText">
-            <img src={photoshop} alt='photoshop' />
-            <p>Adobe Photoshop</p>
+            <img src={lightroom} alt='photoshop' />
+            <p>Lightroom</p>
         </div>
         <div className="iconText">
-            <img src={photoshop} alt='photoshop' />
-            <p>Adobe Photoshop</p>
+            <img src={illustrator} alt='photoshop' />
+            <p>Illustrator</p>
+        </div>
+        <div className="iconText">
+            <img src={aftereffects} alt='photoshop' />
+            <p>After Effects</p>
+        </div>
+        <div className="iconText">
+            <img src={affinity} alt='photoshop' />
+            <p>Afinity Photo</p>
+        </div>
+        <div className="iconText">
+            <img src={capcut} alt='photoshop' />
+            <p>Capcut</p>
+        </div>
+        <div className="iconText">
+            <img src={illustrator} alt='photoshop' />
+            <p>Illustrator</p>
         </div>
 
         </ToolsImages>
