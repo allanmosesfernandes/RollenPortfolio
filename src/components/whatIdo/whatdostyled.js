@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import images from "../../assets/images/whatIdo/WHAT01.webp"
 export const WhatIdoStyledSection = styled.section `
-  background-color: #ffd02f;
+background: linear-gradient(220.55deg, #FFF500 0%, #FFB800 100%);
   color: black;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;

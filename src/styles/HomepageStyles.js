@@ -2,11 +2,11 @@ import styled from "styled-components";
 import bottom from "../assets/images/HOme/bottom.png";
 
 export const StyledH2 = styled.h2 `
-  font-family: ${(props) => props.theme.secondaryFont};
+  font-family: ${(props) => props.theme.ChillFont};
   font-size: ${(props) => props.theme.fsLG};
   letter-spacing: 1px;
   display: flex;
-  margin: 1rem 0;
+  margin: 5rem 0px 1rem 0;
   @media only screen and (max-width: 800px) {
     //code goes here
     font-size: ${(props) => props.theme.fsMedium};
