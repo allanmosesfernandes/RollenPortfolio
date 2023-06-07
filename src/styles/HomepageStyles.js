@@ -33,12 +33,10 @@ export const HomepageH2 = styled(StyledH2)
 export const HelloDiv = styled.section`
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
 width: 100%;
   p {
     font-family: ${(props) => props.theme.ChillFont};
-    font-size: ${(props) => props.theme.fsXL};
+    font-size: ${(props) => props.theme.fs2};
     line-height: 1.5;
     letter-spacing: 1px;
     margin: 1rem 0;
@@ -47,9 +45,9 @@ width: 100%;
 `
 export const TypewriterDiv = styled.div`
 display: flex;
-margin: 4rem 0;
-    font-family: ${(props) => props.theme.nymphaFont};
-    font-size: ${(props) => props.theme.fsLG};
+margin: 1rem 0;
+font-family: ${(props) => props.theme.nymphaFont};
+font-size: ${(props) => props.theme.fs2};
 .Typewriter {
   margin-left: 10px;
 }
@@ -65,18 +63,13 @@ export const HomePageStyled = styled.section `
   .hello {
     position: absolute;
     transform: rotate(270deg);
-    transform-origin: bottom;
-    left: 20px;
-  }
-  .namaste {
-    position: absolute;
-    transform: rotate(270deg);
     transform-origin: right;
-    right: 20px; 
+    right: 50px;
+    top: -45px;
   }
+
   .arrow {
     width: 70px;
-    transform: rotate(45deg);
   }
   @media only screen and (max-width: 600px) {
     //code goes here

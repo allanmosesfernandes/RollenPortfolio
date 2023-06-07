@@ -28,18 +28,15 @@ export default function Home() {
             a
             <Typewriter
               options={{
-                strings: [' Graphic Designer', ' Footballer', ' Afro Beat Specialist', ''],
+                strings: [' graphic designer', ' footballer', ' afro beat specialist',],
                 autoStart: true,
                 loop: true,
               }}
             />
-            {/* <span>
-              <img className="smallImg" src={Artist} alt="artist" />
-            </span>
-            As a graphic designer , I have a keen eye for detail and a strong
-            understanding of design principles, which allows me to create
-            visually stunning and effective designs. */}
           </TypewriterDiv>
+            <p>
+              based out of Mumbai India, currently 
+            </p>
         </HelloDiv>
 
       </HomePageStyled>

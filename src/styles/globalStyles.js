@@ -100,6 +100,7 @@ export const theme = {
     fsXL: "5rem",
     fsLG: "4rem",
     fsMedium: "3rem",
+    fs2: "2rem",
     fsSmall: "1.2rem",
     fsXsmall: "1rem",
 }
