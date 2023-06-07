@@ -1,15 +1,12 @@
 import * as React from "react";
-import hello from "../assets/images/HOme/hand.png"
-import helloo from "../assets/images/HOme/helloo.png"
 import namaste from "../assets/images/HOme/namaste.png"
 import { HomePageStyled, HomepageH2, VideoContainer, TypewriterDiv, HelloDiv } from "../styles/HomepageStyles";
 import { GlobalStyle } from "../styles/globalStyles";
-import Artist from "../assets/images/HOme/artist.png";
 import WhatIdo from "../components/whatIdo/WhatIdo";
-import YoutubeVideo from "../components/youtubeVideo";
 import Gradient from "../components/Gradient/Gradient";
 import WhiteArr from "../assets/images/HOme/arrowBlock.svg";
 import Typewriter from 'typewriter-effect';
+import Tools from "../components/Tools/tools";
 
 export default function Home() {
   return (
@@ -41,6 +38,7 @@ export default function Home() {
 
       </HomePageStyled>
       <WhatIdo />
+      <Tools />
     </>
   );
 }
