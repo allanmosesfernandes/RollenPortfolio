@@ -19,7 +19,7 @@ export default function Home() {
       <HomePageStyled className="wrapper">
         <HelloDiv>
         <img src={namaste} alt="hello" className="hello"/> 
-          <p>
+          <p className="rolley">
             I'm Rollen.
           </p>
           
@@ -35,7 +35,7 @@ export default function Home() {
             />
           </TypewriterDiv>
             <p>
-              based out of Mumbai India, currently 
+              based out of Mumbai India, currently using my graphic design tools converting PSD files into live designs at Little Olive. 43 Designs is where all my design's live on the internet. <br /><br/>Before embarking on my graphic design journey I was (still am) a professional footballer and 43 was my very first jersey number and has been a constant ever since. <br /><br />Along with graphic design and football the final feather in my cap is music. I'm spinning up some sic beats in my free time and if you're into Afro beats you should check some of my mixes.
             </p>
         </HelloDiv>
 

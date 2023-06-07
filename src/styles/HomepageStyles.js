@@ -7,7 +7,6 @@ export const StyledH2 = styled.h2 `
   letter-spacing: 1px;
   display: flex;
   margin: 1rem 0;
-
   @media only screen and (max-width: 800px) {
     //code goes here
     font-size: ${(props) => props.theme.fsMedium};
@@ -26,34 +25,43 @@ export const HomepageH2 = styled(StyledH2)
       background-color: ${(props) => props.theme.neonGreen};
     }
   }
-
-  
 `;
 
-export const HelloDiv = styled.section`
+export const HelloDiv = styled.section `
 display: flex;
 flex-direction: column;
-width: 100%;
-  p {
+justify-content: center;
+position: relative;
+.rolley{
+  font-size: ${(props) => props.theme.fs2};
+}
+p {
     font-family: ${(props) => props.theme.ChillFont};
-    font-size: ${(props) => props.theme.fs2};
+    font-size: ${(props) => props.theme.fsSmall};
     line-height: 1.5;
     letter-spacing: 1px;
     margin: 1rem 0;
-  }
+    width: 75%;
 
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      width: 90%;
+      font-size: ${(props) => props.theme.fsXsmall};
+    }
+
+}
 `
-export const TypewriterDiv = styled.div`
+export const TypewriterDiv = styled.div `
 display: flex;
-margin: 1rem 0;
+margin: 1rem 0 -0.4rem 0;
 font-family: ${(props) => props.theme.nymphaFont};
 font-size: ${(props) => props.theme.fs2};
 .Typewriter {
   margin-left: 10px;
 }
-  .Typewriter__wrapper {
-
-  }
+@media only screen and (max-width: 600px) {
+font-size: ${(props) => props.theme.fsSmall};
+}
 `
 export const HomePageStyled = styled.section `
   display: grid;
@@ -64,23 +72,16 @@ export const HomePageStyled = styled.section `
     position: absolute;
     transform: rotate(270deg);
     transform-origin: right;
-    right: 50px;
-    top: -45px;
+    right: 0;
+    top: 0;
   }
-
   .arrow {
     width: 70px;
   }
   @media only screen and (max-width: 600px) {
     //code goes here
     grid-template-columns: 1fr;
-    img {
-    width: 30px;
-    height: 30px;
   }
-  }
-
-
   .smallImg {
     width: 40px;
     height: 40px;
@@ -126,4 +127,3 @@ export const VideoContainer = styled.div `
 
   
 `;
-
