@@ -7,6 +7,7 @@ import Gradient from "../components/Gradient/Gradient";
 import WhiteArr from "../assets/images/HOme/arrowBlock.svg";
 import Typewriter from 'typewriter-effect';
 import Tools from "../components/Tools/tools";
+import Quote from "../components/quote/Quote";
 
 export default function Home() {
   return (
@@ -39,11 +40,10 @@ export default function Home() {
       </HomePageStyled>
       <WhatIdo />
       <Tools />
+      <Quote />
     </>
   );
 }
-
-// export const Head = () => <title>Home Page</title>
 
 export const Head = () =>(
   <>
