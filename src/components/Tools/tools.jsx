@@ -49,7 +49,7 @@ const Tools = () => {
         </div>
         <div className="iconText">
             <img src={meta} alt='photoshop' />
-            <p>Meta Seller Hub</p>
+            <p>Meta Business</p>
         </div>
         <div className="iconText">
             <img src={photoshop} alt='photoshop' />
