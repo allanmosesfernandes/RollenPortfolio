@@ -20,7 +20,6 @@ const Gradient = () => {
               <img src={Star} alt="Globe" className="star" />
             </span>
           </h2>
-
         </div>
       </div>
     </GradientStyledDiv>

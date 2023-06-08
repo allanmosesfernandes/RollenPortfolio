@@ -4,6 +4,7 @@ import PPReg from "../assets/fonts/PP Neue Machina - Free for Personal Use/PPReg
 import Migra from "../assets/fonts/Migra - Free for Personal Use/Migra-Extralight.ttf";
 import Chill from "../assets/fonts/Chillax_Complete/Fonts/OTF/Chillax-Regular.otf";
 import Nympha from "../assets/fonts/nympha/NymphaTrial-Light.ttf";
+import NymphaReg from "../assets/fonts/nympha/NymphaTrial-Regular.ttf";
 import Monchu from "../assets/fonts/nympha/Monchu.ttf";
 import MikelaRegular from "../assets/fonts/nympha/MikelaRegular.ttf";
 import LP from "../assets/fonts/LP/LP.ttf";
@@ -20,6 +21,12 @@ export const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'Nympha';
     src: url(${Nympha}) format('truetype');
+     /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+    font-family: 'Nympha-regular';
+    src: url(${NymphaReg}) format('truetype');
      /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
@@ -109,6 +116,7 @@ export const theme = {
     migraFont: "'Migra',monospace",
     ChillFont: "'Chill',monospace",
     nymphaFont: "'Nympha',monospace",
+    nymphaRegular: "'Nympha-regular',monospace",
     lpFont: "'Lp',monospace",
     fsXXL: "8rem",
     fsXL: "5rem",
