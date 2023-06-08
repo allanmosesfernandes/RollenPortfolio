@@ -8,7 +8,7 @@ import WhiteArr from "../assets/images/HOme/arrowBlock.svg";
 import Typewriter from 'typewriter-effect';
 import Tools from "../components/Tools/tools";
 import Quote from "../components/quote/Quote";
-
+import Youtube from "../components/Youtube/youtube";
 export default function Home() {
   return (
     <>
@@ -41,6 +41,7 @@ export default function Home() {
       <WhatIdo />
       <Tools />
       <Quote />
+      <Youtube />
     </>
   );
 }
