@@ -125,10 +125,5 @@ export const VideoContainer = styled.div `
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding: 2rem;
-  .youtube-video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-  }
-
   
 `;

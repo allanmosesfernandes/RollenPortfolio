@@ -1,8 +1,15 @@
 import React from 'react'
+import styled from 'styled-components';
+
+const StyledYoutubePlayer = styled.iframe`
+width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+`
 
 const YoutubeVideo = ({ src,title }) => {
   return (
-    <iframe
+    <StyledYoutubePlayer
       className="youtube-video"
       src={src}
       title={title}
@@ -11,7 +18,7 @@ const YoutubeVideo = ({ src,title }) => {
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
-    ></iframe>
+    ></StyledYoutubePlayer>
   );
 }
 
