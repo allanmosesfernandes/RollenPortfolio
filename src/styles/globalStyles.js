@@ -81,6 +81,13 @@ body {
     background-size: cover;
     color: ${(props) => props.theme.secondaryColor};
 }
+.marquee-container {
+    background-color: #e8ff02;
+    border: none;
+    outline: none;
+    padding: 2rem;
+}
+
 
   .gatsby-image-wrapper img[src*=base64\\,] {
     image-rendering: -moz-crisp-edges;

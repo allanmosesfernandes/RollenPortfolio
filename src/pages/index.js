@@ -9,6 +9,7 @@ import Typewriter from 'typewriter-effect';
 import Tools from "../components/Tools/tools";
 import Quote from "../components/quote/Quote";
 import Youtube from "../components/Youtube/youtube";
+import MarqueeContainer from "../components/marquee/Marquee";
 export default function Home() {
   return (
     <>
@@ -42,6 +43,7 @@ export default function Home() {
       <Tools />
       <Quote />
       <Youtube />
+      <MarqueeContainer />
     </>
   );
 }
