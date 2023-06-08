@@ -45,7 +45,7 @@ p {
 
     @media only screen and (max-width: 600px) {
       //code goes here
-      width: 90%;
+      width: 85%;
       font-size: ${(props) => props.theme.fsXsmall};
     }
 
@@ -79,7 +79,7 @@ export const HomePageStyled = styled.section `
   .arrow {
     width: 70px;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     //code goes here
     grid-template-columns: 1fr;
   }
@@ -87,6 +87,10 @@ export const HomePageStyled = styled.section `
     width: 40px;
     height: 40px;
     margin: 0 10px;
+  }
+  .hello {
+    top: 20%;
+    width: 230px;
   }
 `;
 
