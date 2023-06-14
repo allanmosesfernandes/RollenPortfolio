@@ -6,15 +6,21 @@ import YoutubeVideo from '../youtubeVideo'
 const Youtube = () => {
   return (
     <StyledYoutubeDiv>
-        <p>Away from photoshop and the football field, I keep busy by spinning up some slick afro music on channel. </p>
-        <StyledVideoOverlay>
-        <div className='over'></div>
+      <p>
+        Away from photoshop and the football field, I keep busy by spinning up
+        some slick afro music on channel.{" "}
+      </p>
+      <StyledVideoOverlay>
+        <div className="over"></div>
         <img src={Overlay} />
-        <img src={play} className="playBtn"/>
-        <YoutubeVideo src="https://www.youtube.com/embed/Vnp1ARNaoKU" title="mix" />
-        </StyledVideoOverlay>
+        <img src={play} className="playBtn" />
+        <YoutubeVideo
+          src="https://www.youtube.com/embed/lsQqNL8k0nI"
+          title="mix"
+        />
+      </StyledVideoOverlay>
     </StyledYoutubeDiv>
-  )
+  );
 }
 
 export default Youtube
